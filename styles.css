@@ -1,0 +1,124 @@
+body {
+   font-family: 'Times New Roman', Times, serif;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   background-color: #d7e5f0; /* pastel biru lembut */
+   color: #3a4a66; /* teks gelap tapi lembut */
+}
+
+header {
+   background: #70a9d4; /* pastel biru lebih terang */
+   color: white;
+   padding: 1rem 0;
+   text-align: center;
+}
+
+header h1 {
+   margin: 0;
+}
+
+nav {
+   background: #70a9d4; /* pastel biru terang */
+   padding: 0.5rem 0;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   margin: 0 1rem;
+}
+
+nav ul li a {
+   color: #70a9d4; /* biru pastel */
+   text-decoration: none;
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+   background: #a0c8e4; /* pastel biru lebih muda */
+}
+
+main {
+   padding: 2rem;
+}
+
+section {
+   margin-bottom: 2rem;
+   background: #a8c9e9; /* pastel biru lebih cerah */
+   padding: 1.5rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+   color: #3a4a66; /* warna biru tua yang lembut */
+   margin-bottom: 1rem;
+}
+
+.profile-pic {
+   max-width: 150px;
+   border-radius: 50%;
+   display: block;
+   margin: 0 auto 1rem;
+   border: 3px solid #3a4a66; /* border biru lebih gelap */
+}
+
+.org-pic {
+   max-width: 200px;
+   border-radius: 4%;
+   display: inline-block;
+   margin: 0%;
+   border: #3a4a66;
+}
+
+.hobby-pic {
+   max-width: 200px;
+   border-radius: 4%;
+   display: inline-block;
+   margin: 0%;
+   border: #3a4a66;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+ul li {
+   background: #c0d6e8; /* biru pastel terang */
+   margin: 0.5rem 0;
+   padding: 0.5rem;
+   border-radius: 4px;
+}
+
+a {
+   color: #3a4a66; /* biru tua lembut */
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+footer {
+   background-color: #70a9d4; /* warna latar belakang footer */
+   color: white;
+   text-align: center;
+   padding: 1rem 0;
+   margin-top: 2rem; /* memberi jarak antara footer dan konten */
+}
+
+footer p {
+   margin: 0;
+   font-size: 1rem;
+}
