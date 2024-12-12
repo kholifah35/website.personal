@@ -3,23 +3,24 @@ body {
    line-height: 1.6;
    margin: 0;
    padding: 0;
-   background-color: #d7e5f0; /* pastel biru lembut */
-   color: #3a4a66; /* teks gelap tapi lembut */
+   background-color: #d7e5f0; 
+   color: #3a4a66; 
 }
 
 header {
-   background: #70a9d4; /* pastel biru lebih terang */
+   background: #70a9d4; 
    color: white;
-   padding: 1rem 0;
+   padding: 1rem;
    text-align: center;
 }
 
 header h1 {
    margin: 0;
+   font-size: 1.8rem;
 }
 
 nav {
-   background: #70a9d4; /* pastel biru terang */
+   background: #70a9d4;
    padding: 0.5rem 0;
 }
 
@@ -27,16 +28,17 @@ nav ul {
    list-style: none;
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0;
 }
 
 nav ul li {
-   margin: 0 1rem;
+   margin: 0.5rem 1rem;
 }
 
 nav ul li a {
-   color: #70a9d4; /* biru pastel */
+   color: white; 
    text-decoration: none;
    font-weight: bold;
    padding: 0.5rem 1rem;
@@ -45,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-   background: #a0c8e4; /* pastel biru lebih muda */
+   background: #a0c8e4; 
 }
 
 main {
@@ -54,14 +56,13 @@ main {
 
 section {
    margin-bottom: 2rem;
-   background: #a8c9e9; /* pastel biru lebih cerah */
-   padding: 1.5rem;
+   background: #a8c9e9; 
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-   color: #3a4a66; /* warna biru tua yang lembut */
+   color: #3a4a66; 
    margin-bottom: 1rem;
 }
 
@@ -70,23 +71,15 @@ section h2 {
    border-radius: 50%;
    display: block;
    margin: 0 auto 1rem;
-   border: 3px solid #3a4a66; /* border biru lebih gelap */
+   border: 3px solid #3a4a66; 
 }
 
-.org-pic {
+.org-pic, .hobby-pic {
    max-width: 200px;
    border-radius: 4%;
    display: inline-block;
-   margin: 0%;
-   border: #3a4a66;
-}
-
-.hobby-pic {
-   max-width: 200px;
-   border-radius: 4%;
-   display: inline-block;
-   margin: 0%;
-   border: #3a4a66;
+   margin: 0.5rem;
+   border: 3px solid #3a4a66;
 }
 
 ul {
@@ -95,14 +88,14 @@ ul {
 }
 
 ul li {
-   background: #c0d6e8; /* biru pastel terang */
+   background: #c0d6e8; 
    margin: 0.5rem 0;
    padding: 0.5rem;
    border-radius: 4px;
 }
 
 a {
-   color: #3a4a66; /* biru tua lembut */
+   color: #3a4a66; 
    text-decoration: none;
 }
 
@@ -111,14 +104,64 @@ a:hover {
 }
 
 footer {
-   background-color: #70a9d4; /* warna latar belakang footer */
+   background-color: #70a9d4; 
    color: white;
    text-align: center;
-   padding: 1rem 0;
-   margin-top: 2rem; /* memberi jarak antara footer dan konten */
+   padding: 1rem;
+   margin-top: 2rem;
 }
 
 footer p {
    margin: 0;
    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+   header h1 {
+       font-size: 1.5rem;
+   }
+
+   nav ul {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   nav ul li {
+       margin: 0.5rem 0;
+   }
+
+   section {
+       padding: 1rem;
+   }
+
+   .profile-pic, .org-pic, .hobby-pic {
+       max-width: 100%;
+       margin-bottom: 1rem;
+   }
+
+   footer {
+       font-size: 0.9rem;
+   }
+}
+
+@media (max-width: 480px) {
+   body {
+       font-size: 14px;
+   }
+
+   header h1 {
+       font-size: 1.2rem;
+   }
+
+   nav ul li {
+       margin: 0.3rem 0;
+   }
+
+   section {
+       padding: 0.5rem;
+   }
+
+   footer {
+       font-size: 0.8rem;
+   }
 }
