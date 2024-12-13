@@ -16,7 +16,16 @@ header {
 
 header h1 {
    margin: 0;
-   font-size: 1.8rem;
+   font-size: 2rem; /* Diperbesar sedikit */
+}
+
+header h2.subtitle {
+   font-size: 1.4rem; /* Ukuran font lebih kecil */
+   color: #ffffff; /* Warna putih */
+   margin-top: 0.5rem; /* Jarak dari judul utama */
+   text-align: center; /* Posisikan di tengah */
+   font-weight: 300; /* Tambahkan gaya tipis */
+   font-style: italic; /* Opsional: membuat miring */
 }
 
 nav {
@@ -59,6 +68,7 @@ section {
    background: #a8c9e9; 
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 1.5rem;
 }
 
 section h2 {
@@ -67,7 +77,7 @@ section h2 {
 }
 
 .profile-pic {
-   max-width: 150px;
+   max-width: 200px; /* Diperbesar */
    border-radius: 50%;
    display: block;
    margin: 0 auto 1rem;
@@ -75,7 +85,7 @@ section h2 {
 }
 
 .org-pic, .hobby-pic {
-   max-width: 200px;
+   max-width: 250px; /* Sedikit diperbesar */
    border-radius: 4%;
    display: inline-block;
    margin: 0.5rem;
@@ -116,9 +126,10 @@ footer p {
    font-size: 1rem;
 }
 
+/* Responsif */
 @media (max-width: 768px) {
    header h1 {
-       font-size: 1.5rem;
+       font-size: 1.6rem;
    }
 
    nav ul {
@@ -134,9 +145,12 @@ footer p {
        padding: 1rem;
    }
 
-   .profile-pic, .org-pic, .hobby-pic {
-       max-width: 100%;
-       margin-bottom: 1rem;
+   .profile-pic {
+       max-width: 150px;
+   }
+
+   .org-pic, .hobby-pic {
+       max-width: 180px;
    }
 
    footer {
@@ -150,7 +164,7 @@ footer p {
    }
 
    header h1 {
-       font-size: 1.2rem;
+       font-size: 1.4rem;
    }
 
    nav ul li {
@@ -159,6 +173,14 @@ footer p {
 
    section {
        padding: 0.5rem;
+   }
+
+   .profile-pic {
+       max-width: 120px;
+   }
+
+   .org-pic, .hobby-pic {
+       max-width: 150px;
    }
 
    footer {
